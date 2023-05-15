@@ -105,7 +105,7 @@ namespace MediaPlayer
             sliProgress.Value = MedShow.Position.TotalMilliseconds;
         }
 
-        private void txtFilePath_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        private void sliProgress_PreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             int SliderValue = (int)sliProgress.Value; // 還記得轉型嗎？
 
