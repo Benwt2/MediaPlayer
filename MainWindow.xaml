@@ -7,6 +7,26 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF00C8FF" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button x:Name="btnPlay" Content="播放" HorizontalAlignment="Left" Margin="21,360,0,0" VerticalAlignment="Top" Height="60" Width="80" Background="#FF2CFF05" Click="btnPlay_Click"/>
+        <Button x:Name="btnOpenFile" Content="開啟檔案" HorizontalAlignment="Left" Margin="631,23,0,0" VerticalAlignment="Top" Height="40" Width="80" Background="#FF8FFF4D" Click="btnOpenFile_Click"/>
+        <Button x:Name="btnPause" Content="暫停" HorizontalAlignment="Left" Margin="162,360,0,0" VerticalAlignment="Top" Height="60" Width="80" Background="#FF0050FF" Click="btnPause_Click"/>
+        <Button x:Name="btnStop" Content="停止" HorizontalAlignment="Left" Margin="311,360,0,0" VerticalAlignment="Top" Height="60" Width="80" Background="Red" Click="btnStop_Click"/>
+        <Button x:Name="btnExit" Content="離開" HorizontalAlignment="Left" Margin="476,360,0,0" VerticalAlignment="Top" Width="80" Height="60" Click="btnExit_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <MediaElement x:Name="MedShow" HorizontalAlignment="Left" Height="260" Margin="21,72,0,0" VerticalAlignment="Top" Width="672" OpacityMask="Black"/>
+        <TextBlock x:Name="txtFilePath" HorizontalAlignment="Left" Margin="61,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="548" Height="40" Background="White"/>
+
     </Grid>
 </Window>
