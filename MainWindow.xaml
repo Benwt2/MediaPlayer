@@ -29,6 +29,7 @@
         <TextBlock x:Name="txtFilePath" HorizontalAlignment="Left" Margin="61,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="548" Height="40" Background="White"/>
         <Slider x:Name="sliVolume" HorizontalAlignment="Left" Margin="610,382,0,0" VerticalAlignment="Top" Width="169" LargeChange="0.05" Maximum="1" TickFrequency="0.01" Value="0.5" ValueChanged="sliVolume_ValueChanged" Height="43"/>
         <Slider x:Name="sliProgress" HorizontalAlignment="Left" Margin="61,337,0,0" VerticalAlignment="Top" Width="583" Height="27" PreviewMouseLeftButtonUp="sliProgress_PreviewMouseLeftButtonUp"/>
+        <TextBox x:Name="txtTime" HorizontalAlignment="Left" Margin="671,342,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
